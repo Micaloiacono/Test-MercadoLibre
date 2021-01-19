@@ -1,0 +1,31 @@
+@mixin display-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+@mixin display-inline-flex {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+@mixin display-grid {
+    display: -ms-grid;
+    display: grid;
+}
+
+@mixin font ($size,$line-height,$weight){
+    font-size: #{$size}px;  
+    line-height: #{$line-height}px;
+    font-weight: $weight;
+    font-style: normal;
+}
+@mixin border-radius ($radius){
+    -webkit-border-radius:$radius;
+    -moz-border-radius:$radius;
+    -ms-border-radius:$radius;
+    border-radius: $radius;
+}
