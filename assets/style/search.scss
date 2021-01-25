@@ -5,6 +5,8 @@
 
 
 .header-container{
+    
+    outline: none;
 
     .header {
         background-color: $yellow;
@@ -51,6 +53,17 @@
                         @include display-flex;
                         justify-content: center;
                         align-items: center;
+                        cursor: pointer;
+
+                        &:hover{
+                            color: $grey2;
+                            border: none;
+                        }
+                        &:focus{
+                            outline: -webkit-focus-ring-color none;
+                            border: none;
+                        }
+                        
                     }
                     
                 }
@@ -59,8 +72,8 @@
     }
 }
 
-.gray-block{
-    background-color:$gray;
+.grey-block{
+    background-color:$grey;
     width: 100%;
     height: 100%;
 
@@ -75,7 +88,7 @@
         .container-description{
         
             .subtitle{
-                color: $gray2;
+                color: $grey2;
             }  
         }
     }
@@ -90,7 +103,7 @@
        min-width: 1200px;
     }
 
-    .gray-block{
+    .grey-block{
         .container-general{
             @include display-flex;
             .img-container{

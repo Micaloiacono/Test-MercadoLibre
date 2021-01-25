@@ -7,7 +7,7 @@
     @include display-flex;
     padding: 16px;
     border-radius: 4px 4px 0 0;
-    background-color: $gray;
+    background-color: $grey;
     margin-top: 12px;
     width: 100%;
     
@@ -16,7 +16,7 @@
     }
 
     a{
-        color:$gray2;    
+        color:$grey2;    
     }
     li{
         @include display-flex;
@@ -36,7 +36,7 @@
     }
     .results-image{
         margin-top: 16px;
-        border-bottom: thin solid $gray;
+        border-bottom: thin solid $grey;
         img{
             border-radius: 4px;
             margin: 16px;

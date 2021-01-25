@@ -389,6 +389,10 @@ h3, .h3 {
 /*Media queris*/
 /*Fonts*/
 /*Colors*/
+.header-container {
+  outline: none;
+}
+
 .header-container .header {
   background-color: #ffe600;
   border: 0;
@@ -467,20 +471,31 @@ h3, .h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
-.gray-block {
+.header-container .header .container-nav .form .div-container .button-search:hover {
+  color: #666666;
+  border: none;
+}
+
+.header-container .header .container-nav .form .div-container .button-search:focus {
+  outline: -webkit-focus-ring-color none;
+  border: none;
+}
+
+.grey-block {
   background-color: #EEEEEE;
   width: 100%;
   height: 100%;
 }
 
-.gray-block .container-general .img-container img {
+.grey-block .container-general .img-container img {
   width: 100%;
   max-width: 500px;
 }
 
-.gray-block .container-general .container-description .subtitle {
+.grey-block .container-general .container-description .subtitle {
   color: #666666;
 }
 
@@ -488,12 +503,12 @@ h3, .h3 {
   .container-nav {
     min-width: 1200px;
   }
-  .gray-block .container-general {
+  .grey-block .container-general {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .gray-block .container-general .img-container img {
+  .grey-block .container-general .img-container img {
     width: 500px;
   }
 }
