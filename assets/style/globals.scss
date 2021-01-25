@@ -97,9 +97,7 @@ h3, .h3{
     grid-auto-rows: auto;
     row-gap: 0;
     column-gap: 20px;
-    //el gap es el margen
 }
-/*  for( count = 1; count <= 12)*/
 @for $i from 1 through 12 {
     .grid-#{$i} {
         grid-column: span ($i);
