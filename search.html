@@ -2,32 +2,39 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador</title>
-    <link rel="stylesheet" href="style.scss">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="globals.scss">
-    <link rel="stylesheet" href="globals.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+    <title>Search</title>
+    <link rel="stylesheet" href="./assets/style/globals.css">
+    <link rel="stylesheet" href="./assets/style/search.css">
   </head>
 <body> 
-    <header class="header">
-      <div class="container-nav">
-        <a class="logo" href="//www.mercadolibre.com.ar" tabindex="2">
-          <img src="Assets/Logo_ML.png" alt="">
-        </a>
-        <form id="search-form" class="form">
-          <div id="container" class="div-container">
-            <div id="" class="input-container">
-              <input class="placeholder-input" id="buscador" placeholder="No dejes de buscar">
+  <div class="header-container">
+      <header class="header">
+        <div class="container-nav ">
+          <a class="logo" href="//www.mercadolibre.com.ar" tabindex="2">
+            <img src="assets/images/Logo_ML.png" alt="">
+          </a>
+          <form id="search-form" class="form">
+            <div id="container" class="div-container">
+              <div id="" class="input-container">
+                <input class="placeholder-input" id="buscador" placeholder="No dejes de buscar">
+              </div>
+              <button class="button-search" type="button" onclick="myFunction()">
+                <img src="assets/images/ic_Search.png" alt="">
+              </button>
             </div>
-            <button class="button" type="button" onclick="algo()">
-              <img src="Assets/ic_Search.png" alt="">
-            </button>
-          </div>
-        </form>
-      </div>  
-    </header>
-    <div class="gray-block">
-    </div>
+          </form>
+        </div>  
+      </header>
+
+      <div class="gray-block">
+        
+      </div>
+  </div>
 </body>
+<script>
+  function myFunction() {
+    location.pathname = '/results.html';
+}
+</script>
 </html>

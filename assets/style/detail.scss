@@ -1,0 +1,73 @@
+@import "./globals.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.detail{
+    background-color: $white;
+    .detail-image{
+        justify-self: center;
+        align-self: start;
+        .desktop{
+            display: none;
+        }
+        .mobile{
+            display: block;
+        }
+    }
+    .detail-info{
+        justify-self: start;
+        align-self: start;
+        .subtitle{
+            padding-top: 32px;
+            padding-bottom: 16px;
+        }
+        h2, h1{
+            padding-bottom: 32px;
+        }
+        button{
+            margin-right: 12px;
+        }
+    }  
+    .info-box{
+        padding-left: 12px;
+        padding-top: 50px;
+        h2, .info{
+            padding-bottom: 32px;
+            max-width: 600px;
+        }
+    } 
+}
+
+
+@media #{$s} {
+    .detail{
+        .detail-image{
+            .desktop{
+                display: block;
+            }
+            .mobile{
+                display: none;
+            }
+        }
+    }
+}
+@media #{$m} {
+    .detail{
+        .detail-info{
+            padding-left: 12px;
+        }
+    }
+}
+@media #{$l} {
+    .detail{
+        .detail-image{
+            justify-self: end;
+        }
+        .detail-info{
+            padding-left: 0;
+        }
+        .info-box{
+            padding-top: 150px;
+        } 
+    }
+}

@@ -1,0 +1,154 @@
+// imports
+@import 'variables';
+@import 'mixins';
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap');
+
+*  { 
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: $font-family;
+}
+//MOBILE FIRST
+body{
+    background-color: $gray;
+}
+
+button.btn-blue {
+    width: 100%;
+    max-width: 218px;
+    height: 45px;
+    border-color: transparent;
+    background-color:$blue;
+    color: $white;
+    border-radius: 6px;
+    cursor: pointer;
+    @include display-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 24px;
+}
+h1, .h1{
+    @include font(46, 50, 700)
+}
+h2, .h2{
+    @include font(28, 32, 700)
+}
+h3, .h3{
+    @include font(24, 28, 700)
+}
+.subtitle{
+    @include font(14, 16, 400)
+}
+.info{
+    @include font(16, 18, 400)
+}
+
+.text{
+    @include font(12, 18, 400)
+}
+
+.text-subtitle{
+    @include font(18, 20, 400)
+}
+
+
+    
+
+//MEDIA QUERIS
+@media #{$l} {
+    .container-nav{
+       min-width: 1200px;
+    }
+    
+}
+
+
+@media #{$m} {
+    .container-nav{
+       min-width: 992px;
+    }
+}
+
+@media #{$s} {
+    .container-nav{
+       min-width: 670px;
+    }
+}
+
+
+.container{
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.grid{
+    @include display-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    row-gap: 0;
+    column-gap: 20px;
+    //el gap es el margen
+}
+/*  for( count = 1; count <= 12)*/
+@for $i from 1 through 12 {
+    .grid-#{$i} {
+        grid-column: span ($i);
+    }
+}
+@media #{$xs} {
+    @for $i from 1 through 12 {
+        .grid-xs#{$i} {
+            grid-column: span ($i);
+        }
+    }
+}
+@media #{$s} {
+    .container{
+        max-width: 768px;
+    }
+    @for $i from 1 through 12 {
+        .grid-s#{$i} {
+            grid-column: span ($i);
+        }
+    }
+}
+@media #{$m} {
+    .container{
+        max-width: 992px;
+    }
+    @for $i from 1 through 12 {
+        .grid-m#{$i} {
+            grid-column: span ($i);
+        }
+    }
+}
+@media #{$l} {
+    .container{
+        max-width: 1200px;
+    }
+    @for $i from 1 through 12 {
+        .grid-l#{$i} {
+            grid-column: span ($i);
+        }
+    }
+}
+@media #{$xl} {
+    .container{
+        max-width: 1440px;
+    }
+    @for $i from 1 through 12 {
+        .grid-xl#{$i} {
+            grid-column: span ($i);
+        }
+    }
+}

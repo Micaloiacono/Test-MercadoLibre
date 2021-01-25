@@ -1,0 +1,93 @@
+@import "./globals.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+
+
+.container-breadcrumb {
+    @include display-flex;
+    padding: 16px;
+    border-radius: 4px 4px 0 0;
+    background-color: $gray;
+    margin-top: 12px;
+    width: 100%;
+    
+    .breadcrumb{
+        @include display-flex;
+    }
+
+    a{
+        color:$gray2;    
+    }
+    li{
+        @include display-flex;
+        align-items: center;
+    }
+    .material-icons{
+        font-size: 14px;
+        padding-top: 5px;
+    }
+}
+
+.results{
+    background-color: $white;
+    .grid-12{
+        @include display-flex;
+    }
+    .results-image{
+        margin-top: 16px;
+        img{
+            border-radius: 4px;
+            margin: 16px;
+        }
+        
+    }
+    .h3{
+        margin-bottom:32px;
+        .logo{
+            margin: 0;
+        }
+    }
+    .box-container{
+        @include display-flex;
+        padding-top: 20px;
+        flex: 1 0 auto;
+        justify-content: space-between;
+    }
+}
+
+@media #{$xs}  {
+    
+    #container-breadcrumb{
+
+        padding-left: 40px;
+    }
+}
+@media #{$s} {
+    
+    #container-breadcrumb{
+
+        padding-left: 40px;
+    }
+}
+@media #{$m} {
+    
+    #container-breadcrumb{
+
+        padding-left: 40px;
+    }
+}
+@media #{$l} {
+    
+    #container-breadcrumb{
+
+        padding-left: 40px;
+    }
+}
+@media #{$xl} {
+    
+    #container-breadcrumb{
+
+        padding-left: 40px;
+    }
+}
+
