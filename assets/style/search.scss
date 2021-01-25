@@ -2,7 +2,20 @@
 @import "./variables.scss";
 @import "./mixins.scss";
 
-
+*{
+    &:hover{
+        border: none;
+    }
+    &:active{
+        border: none;
+        outline: none;
+    }
+    &:focus{
+        outline: none;
+        border: none;
+        outline: -webkit-focus-ring-color none;
+    }
+}
 
 .header-container{
     
@@ -19,6 +32,18 @@
             height: auto;
             max-width: 300px;
             @include display-flex; 
+            &:hover{
+                border: none;
+            }
+            &:active{
+                border: none;
+                outline: none;
+            }
+            &:focus{
+                outline: none;
+                border: none;
+                outline: -webkit-focus-ring-color none;
+            }
             
             .logo{
                 @include display-flex;
@@ -26,6 +51,22 @@
                 margin: 5px;
                 padding-right: 10px;
                 padding-left: 0px;
+                outline: none;
+                cursor:pointer;
+                img{
+                    &:hover{
+                        border: none;
+                    }
+                    &:active{
+                        border: none;
+                        outline: none;
+                    }
+                    &:focus{
+                        border: none;
+                        outline: -webkit-focus-ring-color none;
+                    }
+                }
+               
             }
         
             .form{
@@ -44,7 +85,19 @@
                             @include font(16,20,400);
                             width: 100%;
                             box-sizing: border-box;
+                            &:active {
+                                outline: none;
+                                border:none;
+                            }
+                            &:focus {
+                                outline: none;
+                                border:none;
+                                outline: -webkit-focus-ring-color none;
+                            }
                         }
+                        &:focus{
+                            outline: -webkit-focus-ring-color none;
+                        }   
                     }
         
                     .button-search{ 
