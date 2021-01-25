@@ -32,6 +32,7 @@
     background-color: $white;
     .grid-12{
         @include display-flex;
+        cursor: pointer;
     }
     .results-image{
         margin-top: 16px;
@@ -52,6 +53,11 @@
         padding-top: 20px;
         flex: 1 0 auto;
         justify-content: space-between;
+        max-width: 768px;
+
+        .location{
+            flex: 0 0 auto;
+        }
     }
 }
 
@@ -67,6 +73,12 @@
     #container-breadcrumb{
 
         padding-left: 40px;
+    }
+
+    .results{
+        .box-container{
+            flex: 1 1 auto;
+        }
     }
 }
 @media #{$m} {

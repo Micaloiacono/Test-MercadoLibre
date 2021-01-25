@@ -41,7 +41,8 @@ h2, .h2{
     @include font(28, 32, 700)
 }
 h3, .h3{
-    @include font(24, 28, 700)
+    @include font(24, 28, 700);
+    color: $black-2;
 }
 .subtitle{
     @include font(14, 16, 400)
@@ -54,8 +55,9 @@ h3, .h3{
     @include font(12, 18, 400)
 }
 
-.text-subtitle{
-    @include font(18, 20, 400)
+.text-subtitle {
+    @include font(18, 20, 400);
+    color : $black-2;
 }
 
 
@@ -78,7 +80,7 @@ h3, .h3{
 
 @media #{$s} {
     .container-nav{
-       min-width: 670px;
+       min-width: 768px;
     }
 }
 

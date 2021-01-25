@@ -59,6 +59,7 @@ h3, .h3 {
   line-height: 28px;
   font-weight: 700;
   font-style: normal;
+  color: #000000;
 }
 
 .subtitle {
@@ -87,6 +88,7 @@ h3, .h3 {
   line-height: 20px;
   font-weight: 400;
   font-style: normal;
+  color: #000000;
 }
 
 @media screen and (min-width: 1200px) {
@@ -103,7 +105,7 @@ h3, .h3 {
 
 @media screen and (min-width: 768px) {
   .container-nav {
-    min-width: 670px;
+    min-width: 768px;
   }
 }
 
@@ -128,7 +130,6 @@ h3, .h3 {
           column-gap: 20px;
 }
 
-/*  for( count = 1; count <= 12)*/
 .grid-1 {
   grid-column: span 1;
 }
