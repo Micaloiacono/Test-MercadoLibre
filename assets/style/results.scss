@@ -36,10 +36,12 @@
     }
     .results-image{
         margin-top: 16px;
+        border-bottom: thin solid $gray;
         img{
             border-radius: 4px;
             margin: 16px;
         }
+        
         
     }
     .h3{

@@ -52,7 +52,8 @@ h3, .h3{
 }
 
 .text{
-    @include font(12, 18, 400)
+    @include font(12, 18, 400);
+    color: $black-2;
 }
 
 .text-subtitle {

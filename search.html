@@ -12,15 +12,15 @@
       <header class="header">
         <div class="container-nav ">
           <a class="logo" href="//www.mercadolibre.com.ar" tabindex="2">
-            <img src="assets/images/Logo_ML.png" alt="">
+            <img src="./assets/images/Logo_ML.png" alt="">
           </a>
           <form id="search-form" class="form">
             <div id="container" class="div-container">
-              <div id="" class="input-container">
+              <div class="input-container">
                 <input class="placeholder-input" id="buscador" placeholder="No dejes de buscar">
               </div>
               <button class="button-search" type="button" onclick="myFunction()">
-                <img src="assets/images/ic_Search.png" alt="">
+                <img src="./assets/images/ic_Search.png" alt="">
               </button>
             </div>
           </form>
@@ -34,7 +34,7 @@
 </body>
 <script>
   function myFunction() {
-    location.pathname = '/results.html';
+    window.location.href = './results.html';
 }
 </script>
 </html>

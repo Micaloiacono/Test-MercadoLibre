@@ -81,6 +81,7 @@ h3, .h3 {
   line-height: 18px;
   font-weight: 400;
   font-style: normal;
+  color: #000000;
 }
 
 .text-subtitle {
@@ -457,6 +458,15 @@ h3, .h3 {
 .header-container .header .container-nav .form .div-container .button-search {
   width: 30px;
   height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .gray-block {
